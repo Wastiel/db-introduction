@@ -37,9 +37,11 @@ O MySQL Workbench é uma IDE visual que permite:
 - Chave estrangeira: `id_time` em `Jogador`
 
 **Modelo Conceital**
+
 ![Jogador-Time](assets/time_jogador_conceirto.jpg)
 
 **Modelo Lógico**
+
 ![Jogador-Time](assets/modelo_er_jogador_time.jpg)
 
 ---
@@ -54,9 +56,11 @@ O MySQL Workbench é uma IDE visual que permite:
 - Chave estrangeira: `id_pais` em `Estado`
 
 **Modelo Conceital**
+
 ![Jogador-Time](assets/modelo_er_pais_estado.jpg)
 
 **Modelo Lógico**
+
 ![Jogador-Time](assets/modelo_er_pais_estado_time.jpg)
 
 ---
@@ -88,9 +92,11 @@ O MySQL Workbench é uma IDE visual que permite:
 - Chaves estrangeiras: `id_livro`, `id_autor`
 
 **Modelo Conceital**
+
 ![Jogador-Time](assets/livro_autor.jpg)
 
 **Modelo Lógico**
+
 ![Jogador-Time](assets/livro_x_autor.jpg)
 
 ---
@@ -105,9 +111,11 @@ O MySQL Workbench é uma IDE visual que permite:
 - Chave estrangeira: `id_pessoa` em `CNH`
 
 **Modelo Conceital**
+
 ![Jogador-Time](assets/pessoa_cnh.jpg)
 
 **Modelo Lógico**
+
 ![Jogador-Time](assets/modelo_er_pessoa_.jpg)
 
 ---
