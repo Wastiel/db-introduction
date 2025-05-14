@@ -3,6 +3,7 @@
 
 Este guia apresenta como construir a **modelagem lógica de banco de dados** utilizando a ferramenta **MySQL Workbench**, com exemplos clássicos de relacionamento entre entidades. O foco é aplicar os conceitos de entidade-relacionamento na prática com visualização gráfica.
 
+
 ---
 
 ## 💻 Ferramenta: MySQL Workbench
