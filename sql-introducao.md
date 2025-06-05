@@ -29,6 +29,14 @@ Este guia apresenta os fundamentos dos bancos de dados relacionais com foco em S
 
 ---
 
+## 🏗️ Criação de um Banco de dados (CREATE)
+
+```sql
+CREATE DATABASE escola;
+```
+
+---
+
 ## 🏗️ Criação de Tabela (CREATE)
 
 ```sql
@@ -151,6 +159,15 @@ DELETE FROM Alunos;
 ```sql
 SELECT * FROM Alunos
 WHERE curso = 'Computação' AND idade >= 22;
+```
+
+---
+
+## ✅ Consulta com Condição IN
+
+```sql
+SELECT * FROM Alunos
+WHERE id in(1, 14, 2);
 ```
 
 ---
