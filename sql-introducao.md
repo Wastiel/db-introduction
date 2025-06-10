@@ -172,6 +172,53 @@ WHERE id in(1, 14, 2);
 
 ---
 
+## 🏥 Relacionamento 1:1 — Paciente e Prontuário
+
+### 📘 Conceito:
+Cada **paciente** possui **apenas um prontuário**, e cada **prontuário** está associado a **apenas um paciente**. Isso representa uma relação **um para um (1:1)**.
+
+### 🏗️ Criação das Tabelas
+
+```sql
+CREATE TABLE Paciente (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    data_nascimento DATE
+);
+```
+
+```sql
+CREATE TABLE Prontuario (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    id_paciente INTEGER UNIQUE,
+    historico TEXT,
+    FOREIGN KEY (id_paciente) REFERENCES Paciente(id)
+);
+```
+
+> 🔒 A restrição `UNIQUE` em `id_paciente` garante que um prontuário esteja vinculado **exclusivamente a um único paciente**, implementando assim o relacionamento 1:1.
+
+### 🧾 Exemplo de Inserção
+
+```sql
+INSERT INTO Paciente (nome, data_nascimento) VALUES 
+('Ana Souza', '1990-04-15'),
+('Carlos Lima', '1985-11-22');
+
+INSERT INTO Prontuario (id_paciente, historico) VALUES 
+(1, 'Paciente com histórico de alergias a medicamentos.'),
+(2, 'Paciente hipertenso, faz uso de medicação contínua.');
+```
+
+### 🔍 Consultando pacientes com seus prontuários
+
+```sql
+SELECT p.nome AS paciente, p.data_nascimento, pr.historico
+FROM Paciente p
+JOIN Prontuario pr ON p.id = pr.id_paciente;
+```
+---
+
 ## ⚽ Relacionamento 1:N — Time e Jogadores
 
 ### 📘 Conceito:
