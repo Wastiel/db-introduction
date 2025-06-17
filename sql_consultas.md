@@ -83,10 +83,6 @@ CREATE TABLE LivroAutor (
 
 ---
 
-# 🗄️ Introdução a Banco de Dados com SQL
-
-Este guia apresenta os fundamentos dos bancos de dados relacionais com foco em SQL. Vamos aprender os tipos de dados básicos, como criar tabelas, usar restrições (`PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, etc.), e realizar todas as operações do CRUD.
-
 ## 🔍 Consulta de Dados (SELECT)
 
 ### Buscar todos os registros:
