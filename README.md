@@ -5,5 +5,5 @@
 
 - 📘 [Modelagem Lógica no Workbench](./Modelagem_Logica_Workbench.md)
 - 📄 [Resumo de Modelagem de Dados](./Resumo_Modelagem_Dados.md)
-- 🔍 [Consultas em SQL](./sql_consultas.md)
 - 🧠 [Introdução ao SQL](./sql-introducao.md)
+- 🔍 [Consultas em SQL](./sql_consultas.md)
